@@ -1,11 +1,10 @@
 <?php
 require_once 'connect.php';
 require_once 'helpers.php';
-$title = 'Регистрация';
 include 'header.php';
 
 $errors = [];
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = trim($_POST['fio'] ?? '');
     $phone = trim($_POST['phone'] ?? '');
     $email = trim($_POST['email'] ?? '');

@@ -1,7 +1,6 @@
 <?php
 require_once 'connect.php';
 require_once 'helpers.php';
-$title = 'Бронирование столика';
 include 'header.php';
 
 if (!isset($_SESSION['user_id'])) {
